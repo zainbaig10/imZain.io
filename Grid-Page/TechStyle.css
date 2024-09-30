@@ -1,0 +1,129 @@
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0px;
+  list-style-type: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  column-gap: 30px;
+}
+header {
+  grid-column: span 3;
+  text-align: center;
+  background-color: rgb(255, 244, 234);
+  padding: 10px;
+  border-bottom: #ddd;
+}
+nav {
+  padding: 30px;
+  border-right: 1px solid #ddd;
+  font-family: "Ubuntu", sans-serif;
+}
+aside {
+  padding: 30px;
+  border-left: 1px solid #ddd;
+  font-family: "Ubuntu", sans-serif;
+}
+article {
+  padding: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+footer {
+  grid-column: span 3;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(255, 244, 234);
+  display: block;
+  padding: 50px;
+  font-family: "Ubuntu", sans-serif;
+}
+article h1 {
+  text-align: center;
+  padding: 10px;
+}
+article p {
+  text-align: justify;
+  line-height: 2rem;
+  color: rgb(104, 104, 104);
+}
+article img {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+}
+.rust-image {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav li {
+  display: inline block;
+  margin-right: 10px;
+  gap: 2px;
+}
+
+@media screen and (max-width: 1200px)  {
+  nav{
+    grid-column: span 3;
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  nav li{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  article{
+    grid-column: span 2;
+  }
+  article h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+  aside{
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  nav,article,aside{
+    grid-column: span 3;
+    text-align: center;
+  }
+  aside{
+    border-left: 0;
+    border-top: 1px solid #ddd;
+  }
+  article h2{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  aside ul li{
+    text-align: center;
+  }
+  article p{
+    text-align: center;
+  }
+}
